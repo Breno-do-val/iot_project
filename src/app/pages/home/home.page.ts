@@ -14,7 +14,7 @@ export class HomePage implements OnInit {
   }
 
   goToTempPage() {
-    this.router.navigate(['temperature'])
+    this.router.navigate(['temperature']);
   }
 
 }
