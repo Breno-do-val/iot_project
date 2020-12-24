@@ -8,12 +8,16 @@ import { TemperaturePageRoutingModule } from './temperature-routing.module';
 
 import { TemperaturePage } from './temperature.page';
 
+import { ChartModule } from 'angular2-highcharts';
+import * as highcharts from 'highcharts';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TemperaturePageRoutingModule
+    TemperaturePageRoutingModule,
+    ChartModule.forRoot(highcharts)
   ],
   declarations: [TemperaturePage]
 })
