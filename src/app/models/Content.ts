@@ -1,13 +1,40 @@
 export default class Content {
     
-    private temperature: string ="0";
+    private temperature: string = "0";
+    private tempMax = "0";
+    private tempMin = "0";
     private luminosity: string = "0";
+    private lumMax: string = "0";
+    private lumMin: string = "0";
     private humidity: string  = "0";
+    private humiMax: string = "0";
+    private humiMin: string = "0";
+    private current_color: string = "0";
+    private status_buzzer: Number = null;
     
-	constructor($temperature: string, $luminosity: string, $humidity: string ) {
+	constructor(
+        $temperature: string, 
+        $tempMax: string,
+        $tempMin: string, 
+        $luminosity: string,
+        $lumMax: string,
+        $lumMin: string,
+        $humidity: string,
+        $humiMax: string,
+        $humiMin: string,
+        $current_color: string,
+        $status_buzzer: Number) {
         this.temperature = $temperature;
+        this.tempMax = $tempMax;
+        this.tempMin = $tempMin;
         this.luminosity = $luminosity;
+        this.lumMax = $lumMax;
+        this.lumMin = $lumMin
         this.humidity = $humidity;
+        this.humiMax = $humiMax;
+        this.humiMin = $humiMin;
+        this.current_color = $current_color;
+        this.status_buzzer = $status_buzzer
     }
 
     /**
@@ -59,5 +86,100 @@ export default class Content {
 		this.humidity = value;
 	}
 
+    /**
+     * Getter $lumMax
+     * @return {string }
+     */
+	public get $lumMax(): string  {
+		return this.lumMax;
+	}
+
+    /**
+     * Setter $lumMax
+     * @param {string } value
+     */
+	public set $lumMax(value: string ) {
+		this.lumMax = value;
+	}
+
+    /**
+     * Getter $lumMin
+     * @return {string }
+     */
+	public get $lumMin(): string  {
+		return this.lumMin;
+	}
+
+    /**
+     * Setter $lumMin
+     * @param {string } value
+     */
+	public set $lumMin(value: string ) {
+		this.lumMin = value;
+	}
+
+    /**
+     * Getter $humiMax
+     * @return {string }
+     */
+	public get $humiMax(): string  {
+		return this.humiMax;
+	}
+
+    /**
+     * Setter $humiMax
+     * @param {string } value
+     */
+	public set $humiMax(value: string ) {
+		this.humiMax = value;
+	}
+
+    /**
+     * Getter $humiMin
+     * @return {string }
+     */
+	public get $humiMin(): string  {
+		return this.humiMin;
+	}
+
+    /**
+     * Setter $humiMin
+     * @param {string } value
+     */
+	public set $humiMin(value: string ) {
+		this.humiMin = value;
+	}
+
+    /**
+     * Getter $current_color
+     * @return {string }
+     */
+	public get $current_color(): string  {
+		return this.current_color;
+	}
+
+    /**
+     * Setter $current_color
+     * @param {string } value
+     */
+	public set $current_color(value: string ) {
+		this.current_color = value;
+	}
+
+    /**
+     * Getter $status_buzzer
+     * @return {Number }
+     */
+	public get $status_buzzer(): Number  {
+		return this.status_buzzer;
+	}
+
+    /**
+     * Setter $status_buzzer
+     * @param {Number } value
+     */
+	public set $status_buzzer(value: Number ) {
+		this.status_buzzer = value;
+	}
     
 }

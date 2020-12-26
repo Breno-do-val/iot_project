@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     {
       title: 'Humidity',
       url: '/humidity',
-      icon: 'sunny'
+      icon: 'water'
     },
   ];
 
