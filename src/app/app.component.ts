@@ -22,6 +22,11 @@ export class AppComponent implements OnInit {
       url: '/temperature',
       icon: 'thermometer'
     },
+    {
+      title: 'Luminosity',
+      url: '/luminosity',
+      icon: 'sunny'
+    },
   ];
 
   constructor(

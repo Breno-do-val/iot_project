@@ -17,4 +17,8 @@ export class HomePage implements OnInit {
     this.router.navigate(['temperature']);
   }
 
+  goToLumPage() {
+    this.router.navigate(['luminosity']);
+  }
+
 }
