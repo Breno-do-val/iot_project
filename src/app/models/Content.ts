@@ -7,8 +7,8 @@ export default class Content {
     private lumMax: string = "0";
     private lumMin: string = "0";
     private humidity: string  = "0";
-    private humiMax: string = "0";
-    private humiMin: string = "0";
+    private humidMax: string = "0";
+    private humidMin: string = "0";
     private current_color: string = "0";
     private status_buzzer: Number = null;
     
@@ -20,8 +20,8 @@ export default class Content {
         $lumMax: string,
         $lumMin: string,
         $humidity: string,
-        $humiMax: string,
-        $humiMin: string,
+        $humidMax: string,
+        $humidMin: string,
         $current_color: string,
         $status_buzzer: Number) {
         this.temperature = $temperature;
@@ -31,8 +31,8 @@ export default class Content {
         this.lumMax = $lumMax;
         this.lumMin = $lumMin
         this.humidity = $humidity;
-        this.humiMax = $humiMax;
-        this.humiMin = $humiMin;
+        this.humidMax = $humidMax;
+        this.humidMin = $humidMin;
         this.current_color = $current_color;
         this.status_buzzer = $status_buzzer
     }
@@ -123,7 +123,7 @@ export default class Content {
      * @return {string }
      */
 	public get $humiMax(): string  {
-		return this.humiMax;
+		return this.humidMax;
 	}
 
     /**
@@ -131,7 +131,7 @@ export default class Content {
      * @param {string } value
      */
 	public set $humiMax(value: string ) {
-		this.humiMax = value;
+		this.humidMax = value;
 	}
 
     /**
@@ -139,7 +139,7 @@ export default class Content {
      * @return {string }
      */
 	public get $humiMin(): string  {
-		return this.humiMin;
+		return this.humidMin;
 	}
 
     /**
@@ -147,7 +147,7 @@ export default class Content {
      * @param {string } value
      */
 	public set $humiMin(value: string ) {
-		this.humiMin = value;
+		this.humidMin = value;
 	}
 
     /**

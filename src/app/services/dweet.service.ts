@@ -50,8 +50,8 @@ export class DweetService {
                   _with.content.lumMax,
                   _with.content.lumMin,
                   _with.content.humidity,
-                  _with.content.humiMax,
-                  _with.content.humiMin,
+                  _with.content.humidMax,
+                  _with.content.humidMin,
                   _with.content.current_color,
                   _with.content.status_buzzer);
 
